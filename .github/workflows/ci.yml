@@ -10,7 +10,7 @@ jobs:
               uses: actions/checkout@v3
         
             - name: 2. Construir a imagem docker
-              run: docker build -t app-teste:local
+              run: docker build -t app-teste:local .
             
             - name: 3. Executar o container para validar
               run: docker run --rm app-teste:local
